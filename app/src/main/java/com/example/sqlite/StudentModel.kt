@@ -1,7 +1,5 @@
 package com.example.sqlite
 
-import java.util.*
-
 class StudentModel (
     var id: Int = getAutoId(),
     var name: String = "",
