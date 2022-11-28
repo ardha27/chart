@@ -5,8 +5,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.sqlite.model.BabyModel
 import com.example.sqlite.R
+import com.example.sqlite.model.BabyModel
 
 class BabyAdapter : RecyclerView.Adapter<BabyAdapter.BabyViewHolder>() {
     private var babyList: ArrayList<BabyModel> = ArrayList()
@@ -45,13 +45,11 @@ class BabyAdapter : RecyclerView.Adapter<BabyAdapter.BabyViewHolder>() {
     }
 
     class BabyViewHolder (var view: View) : RecyclerView.ViewHolder(view) {
-        private var id: TextView = view.findViewById(R.id.tvId)
-        private var tvName: TextView = view.findViewById(R.id.tvName)
-        private var tvEmail: TextView = view.findViewById(R.id.tvEmail)
+        private var tvName: TextView = view.findViewById(R.id.tvNIK)
+        private var tvEmail: TextView = view.findViewById(R.id.tvNama)
         var btnDelete: TextView = view.findViewById(R.id.btnDelete)
 
         fun bindView (baby: BabyModel){
-            id.text = baby.id.toString()
             tvName.text = baby.NIK
             tvEmail.text = baby.nama
         }
