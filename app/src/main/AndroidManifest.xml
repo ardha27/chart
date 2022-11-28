@@ -14,13 +14,25 @@
         android:theme="@style/Theme.SQLite"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".view.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.BabyList" >
+        </activity>
+        <activity
+            android:name=".view.GrowthGraph" >
+        </activity>
+        <activity
+            android:name=".view.AddBaby" >
+        </activity>
+        <activity
+            android:name=".view.ScaleBaby" >
         </activity>
     </application>
 

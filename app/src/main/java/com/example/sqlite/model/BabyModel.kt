@@ -1,9 +1,9 @@
-package com.example.sqlite
+package com.example.sqlite.model
 
-class StudentModel (
+class BabyModel (
     var id: Int = getAutoId(),
-    var name: String = "",
-    var email: String = ""
+    var NIK: String = "",
+    var nama: String = ""
 ){
     companion object{
         private var autoId = 0
